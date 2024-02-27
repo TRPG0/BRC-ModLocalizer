@@ -1,0 +1,6 @@
+.vs/
+bin/
+obj/
+*.ai
+package/*.dll
+package/*.zip

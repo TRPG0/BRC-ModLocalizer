@@ -1,4 +1,4 @@
-# BRC-ModLocalizer
+# ModLocalizer
 
 A library for reading custom `.fods` language files to help make it easier to add multi-language support to mods.
 
