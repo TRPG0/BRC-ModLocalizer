@@ -11,7 +11,7 @@ namespace ModLocalizer
     {
         public const string PluginGUID = "trpg.brc.modlocalizer";
         public const string PluginName = "ModLocalizer";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         internal static new ManualLogSource Logger = BepInEx.Logging.Logger.CreateLogSource("ModLocalizer");
 
@@ -28,8 +28,8 @@ namespace ModLocalizer
         }
     }
 
-    [HarmonyPatch(typeof(BaseModule), "ShowMainMenu")]
-    internal class BaseModule_ShowMainMenu_Patch
+    [HarmonyPatch(typeof(UIManager), "InstantiateMainMenuSceneUI")]
+    internal class UIManager_InstantiateMainMenuSceneUI_Patch
     {
         public static void Postfix()
         {
